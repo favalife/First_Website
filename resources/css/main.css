@@ -46,7 +46,16 @@
     --font-size-sub-title: 24px;
     --font-size-heading-small: 16px;
   }
-  
+  {
+    @media screen and (min-width: 800px)
+        :root {
+            --font-size-site-tiitle: 54px;
+            --font-size-page-title: 80px;
+            --font-size-section-title: 48px; 
+            --padder: 2%;
+
+        }
+
   }
   /*  --------------------GLOBAL DEFAULTS */
 
@@ -228,6 +237,7 @@ text-align: right;
 
   }
   
+
   .indicates-required {
     margin-bottom: 10px;
 }
