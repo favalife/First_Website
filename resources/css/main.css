@@ -8,7 +8,7 @@
   --font-default: "Raleway", sans-serif;
 
   /* Colors */
-  --color-green: #6bc3f7;
+  --color-light-blue: #6bc3f7;
   --color-red: #ff5b5e;
   --color-deep-blue: #28313b;
   --color-light-grey: #97a4b1;
@@ -229,9 +229,8 @@ header .layout-wide {
 }
 
 .nav-inner .active {
-    border-bottom-color: currentColor;
-    font-weight: bold;
-
+  border-bottom-color: currentColor;
+  font-weight: bold;
 }
 
 /*  --------------------FOOTER */
@@ -335,66 +334,56 @@ header {
   }
 
   .heading-main {
-      color: var(--alternative-text-color);
-      text-shadow: 0px 1px 10px var(--strong-text-color);
+    color: var(--alternative-text-color);
+    text-shadow: 0px 1px 10px var(--strong-text-color);
   }
-  
 }
 
 /*  --------------------GRIDS */
 
 @media screen and (min-width: 800px) {
-    .content-area-grid {
-        display: grid;
-        grid-template-columns: 48% 48%;
-        justify-content: space-between;
-
-    }
+  .content-area-grid {
+    display: grid;
+    grid-template-columns: 48% 48%;
+    justify-content: space-between;
+  }
 }
 
 /*  --------------------image gallery */
 
 .image-gallery ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-    overflow: hidden;
-    
-
+  overflow: hidden;
 }
 
 .image-gallery li {
-
-    float: left;
-    max-width: 250px;
-    margin: 10px
-
+  float: left;
+  max-width: 250px;
+  margin: 10px;
 }
 
 .image-gallery a img {
-    filter: grayscale(70%);
-    transition: var(--transition-time);
-    box-shadow: 0px 1px 10px var(--strong-text-color);
-    
+  filter: grayscale(70%);
+  transition: var(--transition-time);
+  box-shadow: 0px 1px 10px var(--strong-text-color);
 }
 
 .image-gallery a:hover img {
-    transform: scale(1.1);
-    filter: unset;
+  transform: scale(1.1);
+  filter: unset;
 }
 /*  --------------------animations */
 
 @keyframes fadein {
-
-0% {
-opacity: 0;
-}
-100% {
-  opacity: 1;
+  0% {
+    opacity: 0;
   }
-
+  100% {
+    opacity: 1;
+  }
 }
 main {
   animation-name: fadein;
@@ -414,5 +403,4 @@ main {
   animation-iteration-count: infinite;
 
   animation-timing-function: linear;
-
 }
